@@ -1,0 +1,158 @@
+.noMargin{ margin: 0;}
+.margin-10{
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+}
+.noPadding{ padding: 0!important;}
+.noMarginBottom{ margin-bottom: 0;}
+.text-sm{ font-size: 11px;}
+.urlWidth{
+  width: 200px;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+.nav_top_spark{
+  li{
+    &.active{
+      background: #f5f5f5;
+    }
+  }
+}
+
+#GCL{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  p{
+    width: 100%;
+    text-align: center;
+  }
+  .cssload-container{
+    position:relative;
+    margin: auto;
+    display: table;
+  }
+  .cssload-whirlpool,
+  .cssload-whirlpool::before,
+  .cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(204,204,204);
+    border-left-color: rgb(0,0,0);
+    border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+  }
+  .cssload-whirlpool {
+    margin: -24px 0 0 -24px;
+    height: 49px;
+    width: 49px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+  }
+  .cssload-whirlpool::before {
+    content: "";
+    margin: -22px 0 0 -22px;
+    height: 43px;
+    width: 43px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+  }
+  .cssload-whirlpool::after {
+    content: "";
+    margin: -28px 0 0 -28px;
+    height: 55px;
+    width: 55px;
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
+  }
+  @keyframes cssload-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes cssload-rotate {
+    100% {
+      -o-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes cssload-rotate {
+    100% {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes cssload-rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes cssload-rotate {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+}
+.copyToClipInput{
+  border: 0;
+  box-shadow: none;
+  color: #444444;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  &:active,&:focus{
+    border: 0;
+    box-shadow: none;
+    color: #444444;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    outline: 0;
+  }
+}
+.shortGraph{
+  width : 150px;
+  height : 100px;
+  margin: auto;
+}
+.nav-progressBar{
+  display: table;
+  float: right;
+  position: relative;
+  padding: 10px 10px;
+  align-items: center;
+  .result{
+    width: 100%;
+    display: table;
+    text-align: center;
+    font-size: 11px;
+  }
+  .progress{
+    width: 200px;
+    height: 15px;
+    background: #f5f5f5;
+    border: 1px solid darken(#f5f5f5, 10%);
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    .progress-bar{
+      border-radius: 30px;
+    }
+  }
+}
